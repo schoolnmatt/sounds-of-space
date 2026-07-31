@@ -16,21 +16,21 @@ header {
 }
 
 h1 {
-    font: 140px "bauhaus 93";
+    font: 140px "bauhaus 93", calibri, sans-serif;
     margin: auto;
     line-height: 100%;
     color: black;
 }
 
 h2 {
-    font: 70px "bauhaus 93";
+    font: 70px "bauhaus 93", calibri, sans-serif;
     margin: auto;
     color: ghostwhite;
     line-height: 50px;
 }
 
 h3 {
-    font: 50px "bauhaus 93";
+    font: 50px "bauhaus 93", calibri, sans-serif;
     margin: auto;
     color: ghostwhite;
     line-height: 50px;
