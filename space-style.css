@@ -1,0 +1,224 @@
+body {
+    background-image: url('images/pexels-sam-willis-space-background.jpg');
+    background-size: cover;
+    background-position: center;
+    min-width: 600px;
+}
+
+header {
+    background-color: ghostwhite;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 50px;
+    text-align: center;
+    word-break: break-word;
+    text-overflow: ellipsis;
+}
+
+h1 {
+    font: 140px "bauhaus 93";
+    margin: auto;
+    line-height: 100%;
+    color: black;
+}
+
+h2 {
+    font: 70px "bauhaus 93";
+    margin: auto;
+    color: ghostwhite;
+    line-height: 50px;
+}
+
+h3 {
+    font: 50px "bauhaus 93";
+    margin: auto;
+    color: ghostwhite;
+    line-height: 50px;
+}
+
+p {
+    font: 20px "calibri", sans-serif;
+    color: black;
+}
+
+.instructionsgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "instructionsitem1 instructionsitem1 instructionsitem1"
+        "instructionsitem2 instructionsitem2 instructionsitem2"
+        ". instructionsitem3 .";
+    grid-column-gap: 100px;
+    padding: 50px;
+    border: 10px solid ghostwhite;
+    border-radius: 20px;
+    margin: 50px;
+    align-items: center;
+}
+
+.instructionsmain {
+    background-color: ghostwhite;
+    border-radius: 20px;
+    padding: 0px 20px 0px 20px;
+}
+
+.instructionsstartbutton {
+    background-color: ghostwhite;
+    color: black;
+    font: 20px arial, sans-serif;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    margin: 50px;
+    cursor: pointer;
+}
+
+.instructionsstartbutton:hover {
+    background-color: mediumpurple;
+}
+
+.instructionsitem {
+    text-align: center;
+}
+
+.gamegrid {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "gameitem1 gameitem4 gameitem7"
+        "gameitem2 gameitem5 gameitem8"
+        "gameitem3 gameitem6 gameitem9";
+    grid-column-gap: 100px;
+    padding: 50px;
+    border: 10px solid ghostwhite;
+    border-radius: 20px;
+    margin: 50px;
+    align-items: center;
+}
+
+.gameitem {
+    text-align: center;
+}
+
+.gameitem.answer:hover {
+    transition: .3s ease all;
+    transform: translateY(-10px);
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.gameitem.answer img{
+    width: 50%;
+    border: 10px solid mediumpurple;
+    border-radius:20px;
+}
+
+.gameitem.lives img {
+    max-width: 75%;
+    height: auto;
+    background-color: mediumpurple;
+    padding: 0px 20px 0px 20px;
+    border-radius: 20px;
+}
+
+.playagainbutton {
+    background-color: ghostwhite;
+    color: black;
+    font: 20px arial, sans-serif;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    margin: 50px;
+    cursor: pointer;
+}
+
+.playagainbutton:hover {
+    background-color: mediumpurple;
+}
+
+.wingrid {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        ". winitem1 ."
+        ". winitem2 ."
+        ". winitem3 .";
+    grid-column-gap: 100px;
+    padding: 50px;
+    border: 10px solid ghostwhite;
+    border-radius: 20px;
+    margin: 50px;
+    align-items: center;
+}
+
+.winitem {
+    text-align: center;
+}
+
+.tryagainbutton {
+    background-color: ghostwhite;
+    color: black;
+    font: 20px arial, sans-serif;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    margin: 50px;
+    cursor: pointer;
+}
+
+    .tryagainbutton:hover {
+        background-color: mediumpurple;
+    }
+
+.losegrid {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        ". loseitem1 ."
+        ". loseitem2 ."
+        ". loseitem3 .";
+    grid-column-gap: 100px;
+    padding: 50px;
+    border: 10px solid ghostwhite;
+    border-radius: 20px;
+    margin: 50px;
+    align-items: center;
+}
+
+.loseitem {
+    text-align: center;
+}
+
+p.credits {
+    background-color: ghostwhite;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+@media (max-width: 1100px) {
+    .gamegrid {
+        display: none;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "gameitem1"
+            "gameitem2"
+            "gameitem3"
+            "gameitem4"
+            "gameitem7"
+            "gameitem5"
+            "gameitem8"
+            "gameitem6"
+            "gameitem9";
+        grid-column-gap: 100px;
+        padding: 100px;
+        border: 10px solid ghostwhite;
+        border-radius: 20px;
+        margin: 50px;
+        align-items: center;
+    }
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Sounds of Space</title>
+
+    <link rel="stylesheet" href="space-style.css">
+
+    <script src="space-code.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>
+        
+            Sounds of Space
+        
+        </h1>
+
+        <p>
+
+            While planets and other extraterrestrial bodies are not able to emit traditional sound due to the vacuum of outer space, 
+            we can still observe and enjoy extraterrestrial sounds from converted optical, infared, and x-ray data.
+            These converted sounds are known as <i>sonifications.</i><br /><br />
+            Can you match the sonifications to their correct source in outer space?
+
+        </p>
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <nav class="instructionsgrid">
+
+                <div class="instructionsitem instructionsheader" style="grid-area: instructionsitem1">
+
+                    <h2>
+
+                        Instructions
+
+                    </h2>
+
+                </div>
+
+                <div class="instructionsitem instructionsmain" style="grid-area: instructionsitem2">
+
+                    <p>
+
+                        Start the game and click the audio play button to listen to the sonification.<br /><br />
+                        Listen closely, and try to match the audio to the object in space it comes from. <br /><br />
+                        Guess correctly ten times to win! <br /><br />
+                        Guess incorrectly three times to lose...
+
+                    </p>
+
+                </div>
+
+                <div class="instructionsitem" style="grid-area: instructionsitem3">
+
+                    <button id="instructionsstartbutton" class="instructionsstartbutton">
+
+                        Start Game
+
+                    </button>
+
+                </div>
+
+            </nav>
+
+        </section>
+
+        <section>
+
+            <nav class="gamegrid">
+
+                <div class="gameitem lives" style="grid-area: gameitem1">
+
+                    <img id="lives" src="images/lives/threelives.png" alt="lives" />
+
+                </div>
+
+                <div class="gameitem spacesound" style="grid-area: gameitem2">
+
+                    <audio id="spacesound" controls></audio>
+
+                </div>
+
+                <h2 id="counter" class="gameitem counter" style="grid-area: gameitem3">
+
+                    0/10 correct
+
+                </h2>
+
+                <div class="gameitem answer" style="grid-area: gameitem7">
+
+                    <img id="answer1" alt="answer1" />
+
+                </div>
+
+                <div class="gameitem answer" style="grid-area: gameitem8">
+
+                    <img id="answer2" alt="answer2" />
+
+                </div>
+
+                <div class="gameitem answer" style="grid-area: gameitem9">
+
+                    <img id="answer3" alt="answer3" />
+
+                </div>
+
+                <h3 class="gameitem detail" style="grid-area: gameitem4">
+
+                    Option 1:
+
+                </h3>
+
+
+                <h3 class="gameitem detail" style="grid-area: gameitem5">
+
+                    Option 2:
+
+                </h3>
+
+
+                <h3 class="gameitem detail" style="grid-area: gameitem6">
+
+                    Option 3:
+
+                </h3>
+
+            </nav>
+
+        </section>
+
+        <section>
+
+            <nav class="wingrid">
+
+                <h2 class="winitem win" style="grid-area: winitem1">
+
+                    You Win!
+
+                </h2>
+
+
+                <button id="playagainbutton" class="winitem playagainbutton" style="grid-area: winitem2">
+
+                    Play Again?
+
+                </button>
+
+                <p class="winitem credits" style="grid-area: winitem3">
+
+                    Satelite icons courtesy of LaPLaS Games inc.<br />
+                    Background photo courtesy of Sam Willis, Pexels<br />
+                    All other photo and audio assets courtesy of NASA
+
+                </p>
+
+            </nav>
+
+        </section>
+
+        <section>
+
+            <nav class="losegrid">
+
+                <h2 class="loseitem lose" style="grid-area: loseitem1">
+
+                    You Lose...
+
+                </h2>
+
+
+                <button id="tryagainbutton" class="loseitem tryagainbutton" style="grid-area: loseitem2">
+
+                    Try Again?
+
+                </button>
+
+                <p class="loseitem credits" style="grid-area: loseitem3">
+
+                    Satellite icons courtesy of LaPLaS Games inc.<br />
+                    Background photo courtesy of Sam Willis, Pexels<br />
+                    All other photo and audio assets courtesy of NASA
+
+                </p>
+
+            </nav>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
